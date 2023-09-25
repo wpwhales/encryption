@@ -1,9 +1,9 @@
 <?php
 
-namespace Illuminate\Encryption;
+namespace WPWhales\Encryption;
 
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Str;
+use WPWhales\Support\ServiceProvider;
+use WPWhales\Support\Str;
 use Laravel\SerializableClosure\SerializableClosure;
 
 class EncryptionServiceProvider extends ServiceProvider
@@ -70,7 +70,7 @@ class EncryptionServiceProvider extends ServiceProvider
      * @param  array  $config
      * @return string
      *
-     * @throws \Illuminate\Encryption\MissingAppKeyException
+     * @throws \WPWhales\Encryption\MissingAppKeyException
      */
     protected function key(array $config)
     {

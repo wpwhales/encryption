@@ -1,5 +1,5 @@
 {
-    "name": "illuminate/encryption",
+    "name": "wpwhales/encryption",
     "description": "The Illuminate Encryption package.",
     "license": "MIT",
     "homepage": "https://laravel.com",
@@ -18,12 +18,12 @@
         "ext-hash": "*",
         "ext-mbstring": "*",
         "ext-openssl": "*",
-        "illuminate/contracts": "^11.0",
-        "illuminate/support": "^11.0"
+        "wpwhales/contracts": "dev-master",
+        "wpwhales/support": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Illuminate\\Encryption\\": ""
+            "WPWhales\\Encryption\\": ""
         }
     },
     "extra": {

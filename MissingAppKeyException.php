@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Encryption;
+namespace WPWhales\Encryption;
 
 use RuntimeException;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Illuminate\Encryption;
+namespace WPWhales\Encryption;
 
-use Illuminate\Contracts\Encryption\DecryptException;
-use Illuminate\Contracts\Encryption\Encrypter as EncrypterContract;
-use Illuminate\Contracts\Encryption\EncryptException;
-use Illuminate\Contracts\Encryption\StringEncrypter;
+use WPWhales\Contracts\Encryption\DecryptException;
+use WPWhales\Contracts\Encryption\Encrypter as EncrypterContract;
+use WPWhales\Contracts\Encryption\EncryptException;
+use WPWhales\Contracts\Encryption\StringEncrypter;
 use RuntimeException;
 
 class Encrypter implements EncrypterContract, StringEncrypter
@@ -93,7 +93,7 @@ class Encrypter implements EncrypterContract, StringEncrypter
      * @param  bool  $serialize
      * @return string
      *
-     * @throws \Illuminate\Contracts\Encryption\EncryptException
+     * @throws \WPWhales\Contracts\Encryption\EncryptException
      */
     public function encrypt($value, $serialize = true)
     {
@@ -130,7 +130,7 @@ class Encrypter implements EncrypterContract, StringEncrypter
      * @param  string  $value
      * @return string
      *
-     * @throws \Illuminate\Contracts\Encryption\EncryptException
+     * @throws \WPWhales\Contracts\Encryption\EncryptException
      */
     public function encryptString($value)
     {
@@ -144,7 +144,7 @@ class Encrypter implements EncrypterContract, StringEncrypter
      * @param  bool  $unserialize
      * @return mixed
      *
-     * @throws \Illuminate\Contracts\Encryption\DecryptException
+     * @throws \WPWhales\Contracts\Encryption\DecryptException
      */
     public function decrypt($payload, $unserialize = true)
     {
@@ -176,7 +176,7 @@ class Encrypter implements EncrypterContract, StringEncrypter
      * @param  string  $payload
      * @return string
      *
-     * @throws \Illuminate\Contracts\Encryption\DecryptException
+     * @throws \WPWhales\Contracts\Encryption\DecryptException
      */
     public function decryptString($payload)
     {
@@ -201,7 +201,7 @@ class Encrypter implements EncrypterContract, StringEncrypter
      * @param  string  $payload
      * @return array
      *
-     * @throws \Illuminate\Contracts\Encryption\DecryptException
+     * @throws \WPWhales\Contracts\Encryption\DecryptException
      */
     protected function getJsonPayload($payload)
     {
